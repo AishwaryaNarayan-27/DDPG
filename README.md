@@ -60,16 +60,9 @@ During training:
 - Models are saved every 10 episodes in the `models/` directory.
 - A learning curve is generated and saved in the `results/` directory.
 
-### 2. Evaluation Mode
-To run the agent in evaluation mode without exploration or learning:
-- Modify the `main_ddpg.py` script to:
-  ```python
-  agent.noise = None  # Disable noise for deterministic actions
-  agent.eval_mode = True  # Set evaluation mode
-  ```
-- The agent will take deterministic actions based on the trained actor model.
 
-### 3. Visualize Training Results
+
+### 2. Visualize Training Results
 After training, a learning curve is saved as a plot showing the episode scores and the running average score. Open the file in `results/` to analyze the agent’s performance.
 
 ---
